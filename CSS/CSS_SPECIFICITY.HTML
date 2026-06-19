@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .red{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .purple{
+            color:purple;
+        }
+        /*Attribute Selector*/
+        [datax=5]{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red yellow purple" datax="5">CSS Specificity</h1>
+</body>
+</html>

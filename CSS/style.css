@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(238, 227, 227);
+}
+h1{
+    color:green;text-align: center;
+    background-color: aquamarine;
+}
+div{
+    background-color: rgb(8, 3, 14);
+}
+*{
+    margin: 0;padding: 0;
+}
+
+
+
+
+/* .red{
+    background-color: rebeccapurple;
+} */
