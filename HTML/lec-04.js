@@ -1,0 +1,1 @@
+alert("open with smile")
