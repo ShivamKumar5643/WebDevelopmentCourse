@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & media(iframe,svg) in HTML</title>
+</head>
+<body>
+    <video src="room_video.mp4" controls loop poster="harry.png" width="230"></video>
+    <!--ATTRIBUTES 
+        muted
+        autoplay
+        loop
+        poster
+        control
+
+    -->
+    <audio src="audiofile.mp3" controls></audio>
+    <!--ATTRIBUTES
+    controls
+    loop
+    autoplay
+    muted
+    preload
+    -->  
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3"fill="red"/>
+    </svg>
+    <!--
+    SVG (Scalable Vector Graphics) is an XML-based format used to create graphics directly in the browser.Unlike JPG or PNG images, SVGs are made of mathematical shapes (lines, circles, rectangles, paths, etc.) instead of pixels.It is a inline elememt like audio and video
+    --> 
+    <img src="img.svg" alt="svg image">
+    <iframe src="https://github.com/ShivamKumar5643" width="width" height="height"></iframe>
+    <!--we can embbed diffrent website in our website using iframe-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=svGV0bCx5h64n3PY&amp;start=790" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
