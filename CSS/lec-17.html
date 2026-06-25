@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        div{   /*element selector*/
+            /*background-color: red;*/
+            color: blue;
+        }
+        .red{  /*class selector*/
+            background-color: red;
+        }
+        
+        #green{         /*id selector*/    
+            background-color: green;
+        }
+        div > p{    /*Child selectors. only when direct child*/
+            color: red;
+            background-color: black;
+        }
+        div p {     /*Desecendent selector. if it is present anywhere inside*/
+            background-color: yellow;
+            color: blue;
+        }
+        *{      /*Universal selector. for all element present*/
+            margin: 0;
+            padding: 0;
+        }
+        /*Pseudo Selectors*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color:green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: pink;
+        }  
+        p:first-child{      /*It target whenever p is first child*/
+            background-color: aqua;
+        } 
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+    </div>
+    <div id="green">
+        I am 2nd div
+        <p>i am a child of div </p>
+    </div>
+    <div>
+        <section>
+           <p>I am not child I am descendent of div</p> 
+        </section>
+    </div>
+    <a href="https://chatgpt.com/">Open ChatGpt</a>
+    <a href="https://google.com/">Open Google</a>
+</body>
+</html>
