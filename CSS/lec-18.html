@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css BoxModel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+           background-color: #2563EB;
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            height: 100px;   /*it is the height of conent only*/
+            box-sizing: border-box; /*now it includes padding and border also(content+padding+border)*/
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            height: 100px;   /*it is the height of conent only*/
+            box-sizing: border-box; /*now it includes padding and border also(content+padding+border)*/           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am a another box</div>
+</body>
+
+</html>
