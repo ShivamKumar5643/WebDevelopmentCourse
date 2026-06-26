@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        h1{
+            color: aqua;
+            text-align: center;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple !important;/*This Important can overwrite inline style too */
+        }
+        [data-x=a]{ /*Attribute Selector*/
+            background-color: pink;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="color: red;" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    <p>Inline Style > ID selector > Class or Attribute Selector > Element Selector >Universal Selector
+
+        <ul>
+            <caption>Specificity Calculation</caption>
+            <li>Universal Selector : 0</li>
+            <li>Element Selectors & pseudo-elements : 1</li>
+            <li>Class selectors,attribute selectors,and pseudo-classes : 10</li>
+            <li>Id Selector : 100</li>
+            <li>Inline Style : 1000</li>
+            <li>important : 10000</li>
+        </ul>
+    </p>
+</body>
+</html>
